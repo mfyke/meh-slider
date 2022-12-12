@@ -42,11 +42,11 @@ const marks = [
 ];
 
 function valuetext(value) {
-  return `${value}°C`;
+  return `${value}`;
 }
 
 function valueLabelFormat(value) {
-  return marks.findIndex((mark) => mark.value === value) + 1;
+  return marks.findIndex((mark) => mark.value === value);
 }
 
 export default function DiscreteSliderValues() {
